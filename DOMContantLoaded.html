@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tag">
+    <h1>Learn HTML DOM Javascript</h1>
+    <img src="./asset/samu.jpeg" alt="" class="img">
+    <img src="./asset/samu2.jpeg" alt="">
+    </div>
+    <script>
+        //DOMContentLoaded
+
+        document.addEventListener('DOMContentLoaded',() =>{
+            const Tag = document.querySelector('.tag')
+            const imge = Tag.children[1]
+
+            console.log(imge.offsetWidth,imge.offsetHeight);
+
+        });
+            // load
+
+            window.onload = function(){
+                alert("jaga")
+            const Tag = document.querySelector('.tag')
+            const img = Tag.children[2]
+                
+            document.write(img.offsetWidth,img.offsetHeight);
+            
+        };
+
+    </script>
+</body>
+</html>
